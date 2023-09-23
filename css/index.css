@@ -1,0 +1,422 @@
+body {
+  background-color: white;
+}
+
+.buyticket-button {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.navBar {
+  background: url(../Images/down.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 3rem;
+}
+.footerbackground {
+  background: linear-gradient(-45deg, #0d6efd, #0d6efd);
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+  height: 200px;
+  padding-top: 25px;
+  margin-top: 30px;
+}
+
+.colContent {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+}
+
+.listtext {
+  color: beige;
+}
+
+.listtext2 {
+  color: rgb(231, 231, 190);
+}
+.firstCol {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+.SMLT {
+  border-width: 0.2px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.SMLT:hover {
+  transition: 0.5s;
+  transform: translateY(-10px);
+  border: 1px solid;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border-color: black;
+  background-color: rgb(151, 237, 243);
+}
+
+.SMLF {
+  border-width: 0.2px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.SMLF:hover {
+  transition: 0.5s;
+  transform: translateY(-10px);
+  border: 1px solid;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border-color: black;
+  background-color: rgb(7, 103, 247);
+}
+
+.SMLI {
+  border-width: 0.2px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.SMLI:hover {
+  transition: 0.5s;
+  transform: translateY(-10px);
+  border: 1px solid;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border-color: black;
+  background-color: rgb(243, 174, 237);
+}
+
+.SMLW {
+  border-width: 0.2px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.SMLW:hover {
+  transition: 0.5s;
+  transform: translateY(-10px);
+  border: 1px solid;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  border-color: black;
+  background-color: rgb(56, 247, 82);
+}
+.routeFilter {  
+  margin-top: 8.5rem;
+  padding: 10rem;
+  background-image: url("../Images/FinalBG3.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+/* navbar css */
+.TabsInNavbar {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: color 0.9s;
+}
+.TabsInNavbar::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 0.4rem;
+  background-color: white;
+  transition: width 0.9s;
+}
+.TabsInNavbar:hover {
+  color: white;
+}
+.TabsInNavbar:hover::before {
+  width: 75%;
+}
+
+.ticketPrice {
+  color: rgb(49, 241, 49);
+}
+.modelBody {
+  width: 100%;
+  height: 100%;
+}
+.seatImage {
+  height: 60px;
+  width: 60px;
+  transform: rotate(90deg);
+}
+.seatNumber {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.seatWithNumber {
+  position: relative;
+  border: 0.1px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.seatWithNumber:hover {
+  position: relative;
+  border: 0.1px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: rgb(25, 247, 217);
+}
+.seatWithNumber:active {
+  position: relative;
+  border: 0.1px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: rgb(100, 236, 15);
+}
+.seatWithNumber:visited {
+  position: relative;
+  border: 0.1px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: rgb(238, 16, 201);
+}
+.seatWithNumberButton {
+  position: relative;
+  border: 0.1px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: white;
+}
+.seatWithNumberButton:hover {
+  position: relative;
+  border: 0.1px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: rgb(119, 241, 19);
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.seatWithNumberButton:focus {
+  position: relative;
+  border: 0.1px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: rgb(108, 241, 19);
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+.seatWithNumberButton:checked {
+  position: relative;
+  border: 0.1px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: rgb(108, 241, 19);
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+.seatWithNumberSelected {
+  position: relative;
+  border: 0.1px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: rgb(15, 247, 15);
+}
+.seatWithNumberSelectedByMale {
+  position: relative;
+  border: 0.1px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: #A2FF86;
+}
+.seatWithNumberSelectedByFemale {
+  position: relative;
+  border: 0.1px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: #FF9EAA;
+}
+.seatWithNumberSelectedByChild {
+  position: relative;
+  border: 0.1px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: #FFFD8C;
+}
+.displaySeatCatogery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerforSelectSeat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seatWithNumberReserved {
+  position: relative;
+  border: 0.1px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: rgb(248, 10, 10);
+}
+.coustomText {
+  color: white;
+}
+.coustomIcon {
+  color: white;
+}
+.navbarTabsMenue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  flex-grow: 1;
+  margin-left: 0rem;
+}
+.BannerTextBody { 
+  position: relative; 
+  margin-top: 14.25rem;
+  color: white;
+  font: popins;
+}
+.BannerTitle {
+  margin-bottom: 1rem;
+  color: white;
+}
+.Logo-TravelEase {
+  margin-top: 2rem;
+}
+.LogoImage {
+  margin-top: -2rem;
+  margin margin-left: 2.25rem;
+  height: 10rem;
+  width: 10rem;
+}
+.bannerbacgground{
+  position: absolute;
+  z-index: 0;   
+  height: 45rem;
+  width: 33rem;
+  margin-top: -8rem;
+}
+.FindTicketsDivPopUpWindow{
+  max-width: 60%;
+}
+.FindTicketSubmitButton{
+  visibility: hidden;
+}
+.input[type="date"]{
+  background-color: blue;
+}
+.calender{
+  background-color: #279EFF;
+  padding: 15px;  
+  transform: translate(-50%, -50%);
+  font-style: popins;
+  color: white;  
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.calenderDiv{
+  margin-left: 50%;
+  margin-top: 25rem;
+}
+.passengerCategory{
+  background-color: #279EFF;
+  padding: 15px;  
+  transform: translate(-50%, -50%);
+  font-style: popins;
+  color: white;  
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.genderSelectionDiv{
+  margin-left: 50%;
+}
+.select {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.SeatSelectionDiv{
+  background-color: #279EFF;
+  padding: 5%;  
+  border-radius: 2rem;
+
+}

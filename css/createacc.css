@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+
+body{
+   display:flex;
+   height:100vh;
+   justify-content:center;
+   align-items:center;
+   padding:10px;
+  /* background: #fff;*/
+background:linear-gradient(135deg,#71b7e6,#9b59b6);
+}
+
+.container{
+    max-width:700px;
+    width:100%;
+    background:#fff;
+    padding:25px 30px;
+    border-radius:5px;
+}
+
+.container .title{
+  font-size:25px;
+  font-size:500;
+  position:relative;  
+}
+
+.container .title::before{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:0;
+  height:3px;
+  width:240px;
+  background:linear-gradient(135deg,#71b7e6,#9b59b6);
+
+}
+
+.container form .user-details{
+   /* display:flex;
+    flex-wrap:wrap;
+    flex:1;
+    padding:1px;*/
+    display:grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 10px;
+
+}
+
+form .user-details .input-box{
+    /*margin:20px 0 12px 0;
+    width:calc(100% / 2-20px)*/
+    padding: 10px; /* Add some padding inside each column */
+    margin-bottom:15px;
+    
+    
+}
+
+.user-details .input-box .details{
+    display:block;
+    font-weight:500px;
+    margin-bottom:5px;
+}
+
+.user-details .input-box input{
+    height:45px;
+    width:100%;
+    outline:none;
+    border-radius:5px;
+    border:1px solid #ccc;
+    padding-left:15px;
+    font-size:16px;
+    border-bottom-width:2px;
+    transition:all 0.3s ease;
+}
+
+.details::after{
+    content:"*";
+    color:red;
+}
+
+ .gender-details .gender-title{
+    font-size:20px;
+    font-weight:500;
+}
+.gender-details .category{
+    display:flex;
+    width:80%;
+    margin:14px 0;
+    justify-content:space-between; 
+}
+/*
+.gender-details .category label{
+ display:flex;
+ align-items: center;
+}*/
+
+/*.gender-details .category .dot{
+  height:  18px;
+  width:18px;
+  background:#d9d9d9;
+  border-radius:50%;
+  margin-right:10px;
+  border:5px solid transparent;
+}*/
+
+form .button{
+    height:45px;
+    margin:45px 0;
+}
+
+form .button input {
+    height:100%;
+    width:100%;
+    outline:none;
+    background:linear-gradient(135deg,#71b7e6,#9b59b6);
+    color:#fff;
+    border:none;
+    font-size:18px;
+    font-weight:500;
+    letter-spacing:1px;
+    border-radius:5px;
+    background-color: white;
+    
+    
+}
+
+ #checkbox1 span{
+     color:#686868;
+}
+
+.signin .freeze{
+color:#686868;
+    
+}
+
+
+.signin input {
+  border-radius: 5px;
+  width:auto;
+  background-color: #fff;
+  color:#686868;
+  
+}

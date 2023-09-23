@@ -1,0 +1,20 @@
+.nvb {
+  background: linear-gradient(-45deg, #0d077c, #5b4df1);
+}
+.logo {
+  height: 4rem;
+  width: 8rem;
+}
+.Logotxt {
+  font-size: 2rem;
+  max-width: 10rem;
+  font-weight: 700;
+  font-family: popins;
+  color: #fff;
+}
+.NavCol1 {
+  display: flex;
+  align-items: start;
+  margin-left: 0px;
+  width: 20rem;
+}

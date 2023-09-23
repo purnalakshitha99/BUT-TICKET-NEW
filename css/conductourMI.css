@@ -1,0 +1,360 @@
+@media screen and (max-width: 1440px) {
+  body {
+    background-color: black;
+    padding: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .QRcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reader {
+    height: 250px;
+    width: 250px;
+  }
+  .QrScanerButton {
+    height: auto;
+    width: 200px;
+  }
+  .QrScanerButton:hover {
+    background-color: rgb(88, 88, 230);
+    transition: 0.5s;
+    transform: scale(1.09);
+  }
+  .qrIcon {
+    margin-top: -50px;
+    font-size: 5.5rem;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+  }
+  .ticketGenarator {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .nextLocationIcon {
+    font-size: 2rem;
+  }
+  .currentLocationText {
+    font-size: 0.5rem;
+  }
+  .cardforLocation {
+    width: 130px;
+    padding: 0px;
+    background: rgb(255, 240, 11);
+    background: radial-gradient(
+      circle,
+      rgba(255, 240, 11, 1) 0%,
+      rgba(249, 251, 210, 1) 100%
+    );
+  }
+  .locationAndSosbody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardforSOS {
+    width: 130px;
+    padding: 0px;
+    background: rgb(255, 19, 11);
+    background: radial-gradient(
+      circle,
+      rgba(255, 19, 11, 1) 0%,
+      rgba(251, 215, 210, 1) 100%
+    );
+  }
+  .forSosAndLocationButtons {
+    justify-content: space-between 10px;
+    margin-left: 429px;
+    margin-right: 428px;
+  }
+  .sosText {
+    margin-top: 3.2px;
+  }
+  .sosButton {
+    display: flex;
+    justify-content: space-between 1px;
+    align-items: center;
+  }
+  .buttonsS {
+    margin-left: 16px;
+    margin-right: 23px;
+    display: flex;
+    flex-direction: column;
+  }
+  .CNL {
+    margin-left: 431px;
+    margin-right: 99px;
+  }
+}
+@media screen and (max-width: 1224px) {
+  body {
+    background-color: black;
+    padding: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .QRcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reader {
+    height: 250px;
+    width: 250px;
+  }
+  .QrScanerButton {
+    height: auto;
+    width: 200px;
+  }
+  .QrScanerButton:hover {
+    background-color: rgb(88, 88, 230);
+    transition: 0.5s;
+    transform: scale(1.09);
+  }
+  .qrIcon {
+    margin-top: -50px;
+    font-size: 5.5rem;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+  }
+  .ticketGenarator {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .nextLocationIcon {
+    font-size: 2rem;
+  }
+  .currentLocationText {
+    font-size: 0.5rem;
+  }
+  .cardforLocation {
+    width: 130px;
+    padding: 0px;
+    background: rgb(255, 240, 11);
+    background: radial-gradient(
+      circle,
+      rgba(255, 240, 11, 1) 0%,
+      rgba(249, 251, 210, 1) 100%
+    );
+  }
+  .locationAndSosbody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardforSOS {
+    width: 130px;
+    padding: 0px;
+    background: rgb(255, 19, 11);
+    background: radial-gradient(
+      circle,
+      rgba(255, 19, 11, 1) 0%,
+      rgba(251, 215, 210, 1) 100%
+    );
+  }
+  .forSosAndLocationButtons {
+    justify-content: space-between 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .sosText {
+    margin-top: 3.2px;
+  }
+  .sosButton {
+    display: flex;
+    justify-content: space-between 1px;
+    align-items: center;
+  }
+  .buttonsS {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 500px) {
+  body {
+    background-color: black;
+    padding: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .QRcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reader {
+    height: 250px;
+    width: 250px;
+  }
+  .QrScanerButton {
+    height: auto;
+    width: 200px;
+  }
+  .QrScanerButton:hover {
+    background-color: rgb(88, 88, 230);
+    transition: 0.5s;
+    transform: scale(1.09);
+  }
+  .qrIcon {
+    margin-top: -50px;
+    font-size: 5.5rem;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+  }
+  .ticketGenarator {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .nextLocationIcon {
+    font-size: 2rem;
+  }
+  .currentLocationText {
+    font-size: 0.5rem;
+  }
+  .cardforLocation {
+    width: 130px;
+    padding: 0px;
+    background: rgb(255, 240, 11);
+    background: radial-gradient(
+      circle,
+      rgba(255, 240, 11, 1) 0%,
+      rgba(249, 251, 210, 1) 100%
+    );
+  }
+  .locationAndSosbody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardforSOS {
+    width: 130px;
+    padding: 0px;
+    background: rgb(255, 19, 11);
+    background: radial-gradient(
+      circle,
+      rgba(255, 19, 11, 1) 0%,
+      rgba(251, 215, 210, 1) 100%
+    );
+  }
+  .forSosAndLocationButtons {
+    justify-content: space-between 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .sosText {
+    margin-top: 3.2px;
+  }
+  .sosButton {
+    display: flex;
+    justify-content: space-between 1px;
+    align-items: center;
+  }
+  .buttonsS {
+    margin-left: 239px;
+    margin-right: 237px;
+  }
+}
+
+/*Media Query starts*/
+@media screen and (min-device-width: 600px) and (max-device-width: 480px) {
+  body {
+    background-color: black;
+    padding: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .QRcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reader {
+    height: 250px;
+    width: 250px;
+  }
+  .QrScanerButton {
+    height: auto;
+    width: 200px;
+  }
+  .QrScanerButton:hover {
+    background-color: rgb(88, 88, 230);
+    transition: 0.5s;
+    transform: scale(1.09);
+  }
+  .qrIcon {
+    margin-top: -50px;
+    font-size: 5.5rem;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+  }
+  .ticketGenarator {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .nextLocationIcon {
+    font-size: 2rem;
+  }
+  .currentLocationText {
+    font-size: 0.5rem;
+  }
+  .cardforLocation {
+    width: 130px;
+    padding: 0px;
+    background: rgb(255, 240, 11);
+    background: radial-gradient(
+      circle,
+      rgba(255, 240, 11, 1) 0%,
+      rgba(249, 251, 210, 1) 100%
+    );
+  }
+  .locationAndSosbody {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardforSOS {
+    width: 130px;
+    padding: 0px;
+    background: rgb(255, 19, 11);
+    background: radial-gradient(
+      circle,
+      rgba(255, 19, 11, 1) 0%,
+      rgba(251, 215, 210, 1) 100%
+    );
+  }
+  .forSosAndLocationButtons {
+    justify-content: space-between 10px;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .sosText {
+    margin-top: 3.2px;
+  }
+  .sosButton {
+    display: flex;
+    justify-content: space-between 1px;
+    align-items: center;
+  }
+  .buttonsS {
+    margin-left: 400px;
+    margin-right: -32px;
+  }
+  .CNL {
+    margin-left: 16px;
+    margin-right: -308px;
+  }
+}

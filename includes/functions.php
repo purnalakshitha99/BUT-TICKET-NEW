@@ -188,7 +188,21 @@ function LoginUser($conn, $email, $pwd)
         $_SESSION["userid"] = $uidExist["User_ID"];
         $_SESSION["username"] = $uidExist["Username"];
         $_SESSION["name"] = $uidExist["Name"];
-        header("Location:../Peseenger_dashboard/dashboard-page.php");
-        exit();
+        $_SESSION["role"] = $uidExist["role"];
+
+
+
+        $role = $_SESSION["role"];
+
+        if ($role == 'pasanger') {
+            // Redirect unauthorized users
+            header("Location:../Peseenger_dashboard/dashboard-page.php");
+            exit();
+        } elseif ($role == 'conductor') {
+
+            header("Location:../conductorDashboard.php");
+        } else {
+            echo "maru mru mru";
+        }
     }
 }

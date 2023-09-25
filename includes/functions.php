@@ -161,27 +161,48 @@ function LoginUser($conn, $email, $pwd)
         header("Location:../sign_in.php?error=wronglogin1");
         exit();
     }
-    echo "uid exists athule";
-    $pwdHashed =  $uidExist["Password"];
-    $checkhPwd = password_verify($pwd, $pwdHashed);
 
+
+    $hashedPwdnew = password_hash('12345678', PASSWORD_DEFAULT);
+
+
+    $pwdHashed =  $uidExist["Password"];
+    $checkhPwd = password_verify('12345678', $hashedPwdnew);
+
+    $bool = false;
     echo "<br>";
-    echo $pwdHashed;
+    echo "boolean value >>>" . $checkhPwd;
     echo "<br>";
     echo "<br>";
+    echo "checkpwd   :   ";
     echo $checkhPwd;
     echo "<br>";
 
     if ($checkhPwd === false) {
         echo "hiiiiiiiiiiii";
-        ("Location:../sign_in.php?error=wronglogin2");
+        // header("Location:../sign_in.php?error=wronglogin2");
+
         exit();
     } else if ($checkhPwd === true) {
         session_start();
         $_SESSION["userid"] = $uidExist["User_ID"];
         $_SESSION["username"] = $uidExist["Username"];
         $_SESSION["name"] = $uidExist["Name"];
-        header("Location:../Peseenger_dashboard/dashboard-page.php");
-        exit();
+        $_SESSION["role"] = $uidExist["role"];
+
+
+
+        $role = $_SESSION["role"];
+
+        if ($role == 'pasanger') {
+            // Redirect unauthorized users
+            header("Location:../Peseenger_dashboard/dashboard-page.php");
+            exit();
+        } elseif ($role == 'conductor') {
+
+            header("Location:../conductorDashboard.php");
+        } else {
+            echo "maru mru mru";
+        }
     }
 }

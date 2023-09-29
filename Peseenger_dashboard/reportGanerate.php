@@ -1,6 +1,6 @@
 <?php
 // Include the database connection file
-require_once('./includes/DbConnector_n.php');
+require_once('
 
 // Retrieve data from the database (Assuming 'table1', 'table2', and 'table3' are your table names)
 $sqlTable1 = "SELECT * FROM user";

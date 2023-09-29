@@ -82,24 +82,25 @@
                     </li>
                 </ul>
 
-                <!-- Notification Bell Icon and Count -->
-                <div class="notification-icon">
-                    <a href="#">
-                        <span class="coustomIcon">
-                            <ion-icon name="notifications-outline"></ion-icon>
-                        </span>
-                        <span class="notification-count">3</span>
-                    </a>
-                </div>
-
                 <a href="findTickets.php">
                     <button class="btn btn-outline-warning buyticket-button" type="submit">
                         Buy Tickets
                     </button>
                 </a>
+
+                <!-- Notification Button -->
+                <div class="notification-button">
+                    <button class="btn btn-outline-primary notification-button" type="button">
+                        <span class="coustomIcon">
+                            <ion-icon name="notifications-outline"></ion-icon>
+                        </span>
+                        <span class="notification-count">3</span>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
+
 
     <!---Nav bar End-->
     <!--Body Part Starts-->
@@ -724,6 +725,8 @@
                         <div class="checkout mt-3">
                             <a href="checkout.php">
                                 <button class="btn btn-outline-primary"> Proceed to Checkout</button>
+
+
                             </a>
                         </div>
                     </div>

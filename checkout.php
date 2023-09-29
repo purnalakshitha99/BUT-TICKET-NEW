@@ -58,14 +58,44 @@
     <?php
     session_start();
     if (isset($_SESSION["userid"])) {
-      $user_id = $_SESSION["userid"];
-      echo "User ID: " . $user_id;
+      $User_ID = $_SESSION["userid"];
+      echo "User ID: " . $User_ID;
     }
+
+    require_once('../Project-01-FrontEnd/classes/dbconnectorC.php');
+
+    use classes\dbconnectorC;
 
     if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit'])) {
       echo "Request method is POST, and 'submit' button was pressed.";
+
+      // Define notification data
+      $Notification_ID = ''; // You may generate a unique ID for the notification
+      $Message = "You have successfully booked";
+
+
+      echo "mmmm" . $Message;
+
+      $dbcon = new dbconnectorC();
+      $con = $dbcon->getConnection();
+
+      $query = "INSERT INTO notification (User_ID, Notification_ID, Message) VALUES (?, ?, ?)";
+      $pstmt = $con->prepare($query);
+
+      $pstmt->bindValue(1, $User_ID);
+      $pstmt->bindValue(2, $Notification_ID);
+      $pstmt->bindValue(3, $Message);
+
+
+
+      if ($pstmt->execute()) {
+        echo "Notification saved successfully!";
+      } else {
+        echo "Error: " . $pstmt->errorInfo()[2]; // Display the specific error message
+      }
     }
     ?>
+
 
     <form class="form-horizontal" action="" method="POST">
       <button type="submit" class="btn btn-primary update-button" name="submit">Submit</button>

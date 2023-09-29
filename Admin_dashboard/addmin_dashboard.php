@@ -95,13 +95,75 @@
                         </div>
                     </div>
                 </div>
+                <?php
+                if (isset($_POST['submit'])) {
+                    // Include the TCPDF library
+                    // require_once('../TCPDF/tcpdf.php');
+
+                    // Create a new PDF instance
+                    $pdf = new TCPDF();
+
+                    // Add a page
+                    $pdf->AddPage();
+
+                    // Customize PDF settings (optional)
+                    $pdf->SetTitle('Sample Report');
+                    $pdf->SetAuthor('Your Name');
+
+                    // Include the database connection file
+                    // Database connection
+                    $db_host = 'localhost';
+                    $db_user = 'root';
+                    $db_password = '';
+                    $db_name = 'journey_ease';
+
+                    $conn = new mysqli($db_host, $db_user, $db_password, $db_name);
+
+                    if ($conn->connect_error) {
+                        die("Connection failed: " . $conn->connect_error);
+                    }
+
+                    // Retrieve data from the three tables
+                    $queryTable1 = "SELECT * FROM route";
+                    $resultTable1 = $conn->query($queryTable1);
+
+                    $queryTable2 = "SELECT * FROM package_services";
+                    $resultTable2 = $conn->query($queryTable2);
+
+                    $queryTable3 = "SELECT * FROM schedule";
+                    $resultTable3 = $conn->query($queryTable3);
+
+                    // Add content to the PDF
+                    // Example: Loop through results and add them to the PDF
+                    while ($row = $resultTable1->fetch_assoc()) {
+                        // Customize the content as needed
+                        $pdf->Cell(0, 10, "Route ID: " . $row['route_id'], 0, 1);
+                        $pdf->Cell(0, 10, "Route Name: " . $row['route_name'], 0, 1);
+                        // Add more data as necessary
+                    }
+
+                    while ($row = $resultTable2->fetch_assoc()) {
+                        // Customize the content for table 2
+                    }
+
+                    while ($row = $resultTable3->fetch_assoc()) {
+                        // Customize the content for table 3
+                    }
+
+                    // Output the PDF for download
+                    $pdf->Output('report.pdf', 'D');
+                }
+                ?>
+
                 <div class="col-md-4">
                     <div class="card shadow text-center custom-card">
                         <div class="card-body">
                             <img src="images/Admin/Report.jpg" alt="Image" class="card-image" style="width: 130px;">
                             <h5 class="card-title">Report Generate</h5>
                             <p class="card-text">Manage Report Generate here.</p>
-                            <a href="#" class="btn btn-primary">Go to Report Genarate</a>
+                            <form class="form-horizontal" action="" method="POST">
+                                <button type="submit" class="btn btn-primary update-button" name="submit">Go to Report Generate</button>
+                            </form>
                         </div>
                     </div>
                 </div>

@@ -26,6 +26,8 @@
                 </div>
                 <div>
                     <span>Welcome <?php
+
+                                    session_start();
                                     if (isset($_SESSION["name"])) {
                                         echo $_SESSION["name"] . ' ! ';
                                     } else {
@@ -73,6 +75,8 @@
                     use classes\dbconnectorC;
 
                     if ($_SERVER['REQUEST_METHOD'] == "POST") {
+
+                        echo "purnaid";
                         if (isset($_POST['submit'])) {
                             if (empty($_POST['Email']) || empty($_POST['feedback'])) {
                                 echo '<div class="alert alert-danger" role="alert">Please Fill all feilds.</div>';

@@ -44,7 +44,7 @@ session_start();
                 <ul class="pt-4">
                     <li><a href="dashboard-page.php" class="active">Dashboard</a></li>
                     <li><a href="feedback-page.php">Feedback</a></li>
-                    <li><a href="newFeedback.php">Feedback</a></li>
+
                     <li><a href="profile-page.php">Profile</a></li>
                     <li><a href="#">Logout</a></li>
                 </ul>

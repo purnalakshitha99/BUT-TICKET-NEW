@@ -90,15 +90,70 @@
 
                 <!-- Notification Button -->
                 <div class="notification-button">
-                    <button class="btn btn-outline-primary notification-button" type="button">
+                    <button class="btn btn-outline-primary notification-button" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <span class="coustomIcon">
                             <ion-icon name="notifications-outline"></ion-icon>
                         </span>
                         <span class="notification-count">3</span>
                     </button>
                 </div>
+
+
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Notifications</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row g-3">
+                                <?php
+                                require_once('./classes/dbconnectorC.php');
+
+                                use classes\dbconnectorC;
+
+                                $dbcon = new dbconnectorC();
+                                $con = $dbcon->getConnection();
+
+                                // if ($conn->connect_error) {
+                                //     die("Connection failed: " . $conn->connect_error);
+                                // }
+
+                                $sql = "SELECT * FROM notification";
+                                $stmt = $con->prepare($sql);
+
+                                $stmt->execute();
+
+
+                                $result = $stmt->fetchAll(PDO::FETCH_OBJ);
+
+                                // print_r($result);
+                                // $result = (array) $result;
+
+
+                                foreach ($result as $row) {
+                                    // Access individual columns using object properties
+                                    echo '<div>' . $row->message . '</div>';
+                                    echo '<hr/>';
+                                    echo '<br/>'; // Replace "column1" with your actual column names
+                                    // echo $row->userid;
+                                    // ...
+                                }
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <?php
+
+
+
+        ?>
     </nav>
 
 

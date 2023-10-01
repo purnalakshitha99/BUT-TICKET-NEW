@@ -98,7 +98,7 @@
                 <?php
                 if (isset($_POST['submit'])) {
                     // Include the TCPDF library
-                    // require_once('../TCPDF/tcpdf.php');
+                    require_once('../TCPDF/tcpdf.php');
 
                     // Create a new PDF instance
                     $pdf = new TCPDF();

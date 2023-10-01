@@ -202,7 +202,7 @@ function LoginUser($conn, $email, $pwd)
 
             header("Location:../conductorDashboard.php");
         } else {
-            echo "maru mru mru";
+            echo "newwww";
         }
     }
 }

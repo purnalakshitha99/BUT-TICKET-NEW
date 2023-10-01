@@ -59,7 +59,7 @@
     session_start();
     if (isset($_SESSION["userid"])) {
       $User_ID = $_SESSION["userid"];
-      echo "User ID: " . $User_ID;
+      // echo "User ID: " . $User_ID;
     }
 
     require_once('../Project-01-FrontEnd/classes/dbconnectorC.php');
@@ -67,14 +67,14 @@
     use classes\dbconnectorC;
 
     if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['submit'])) {
-      echo "Request method is POST, and 'submit' button was pressed.";
+      // echo "Request method is POST, and 'submit' button was pressed.";
 
       // Define notification data
       $Notification_ID = ''; // You may generate a unique ID for the notification
       $Message = "You have successfully booked";
 
 
-      echo "mmmm" . $Message;
+
 
       $dbcon = new dbconnectorC();
       $con = $dbcon->getConnection();
@@ -89,7 +89,7 @@
 
 
       if ($pstmt->execute()) {
-        echo "Notification saved successfully!";
+        // echo "Notification saved successfully!";
       } else {
         echo "Error: " . $pstmt->errorInfo()[2]; // Display the specific error message
       }

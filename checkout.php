@@ -74,7 +74,7 @@
       $Message = "You have successfully booked";
 
 
-      echo "mmmm" . $Message;
+
 
       $dbcon = new dbconnectorC();
       $con = $dbcon->getConnection();
